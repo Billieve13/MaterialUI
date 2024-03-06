@@ -126,7 +126,7 @@ const Test = () => {
                 name="age"
                 value={inputs.age}
                 label="Age"
-                onChange={handleChange}
+                onChange={handleChange} //handles the change
             >
                 <MenuItem value={10}>Ten</MenuItem>
                 <MenuItem value={20}>Twenty</MenuItem>
