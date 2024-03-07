@@ -9,6 +9,7 @@ const TestMenu = () => {
     const [anchorElement, setAnchorElement] = useState(null);
     const [anchorElement2, setAnchorElement2] = useState(null);
     const [open, setOpen] = useState(false);
+    const [open2, setOpen2] = useState(false);
 
     const handleClose = () => {
         setAnchorElement(null);
@@ -22,7 +23,12 @@ const TestMenu = () => {
 
     const handleClick2 = (event) => {
         setAnchorElement2(event.currentTarget);
-        setOpen(true);
+        setOpen2(true);
+    }
+
+    const handleClose2 = () => {
+        setAnchorElement(null);
+        setOpen2(false);
     }
 
     return (
@@ -40,11 +46,11 @@ const TestMenu = () => {
                 <Button onClick={handleClick2}>Bills Store</Button>
                     <Menu
                         anchorEl={anchorElement2}
-                        open={open}
-                        onClose={handleClose}
+                        open={open2}
+                        onClose={handleClose2}
                     >
-                        <MenuItem onClick={handleClose}>New Stuffs</MenuItem>
-                        <MenuItem onClick={handleClose}>New Things</MenuItem>
+                        <MenuItem onClick={handleClose2}>New Stuffs</MenuItem>
+                        <MenuItem onClick={handleClose2}>New Things</MenuItem>
                     </Menu>
         </div>
     );
