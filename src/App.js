@@ -1,10 +1,13 @@
 import React from 'react';
-import Test from './Test';
+import TestFormHandling from './TestFormHandling';
+import TestHeader from './TestHeader';
+import TestTabs from './TestTabs';
+import TestMenu from './TestMenu';
 
 function App() {
   return (
     <div>
-      <Test />
+      <TestMenu />
     </div>
   );
 }

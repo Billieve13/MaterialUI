@@ -15,7 +15,7 @@ import {
     RadioGroup,
     } from "@mui/material";
 
-const Test = () => {
+const TestFormHandling = () => {
     const [inputs, setInputs] = useState({
         name: "",
         email: "",
@@ -154,4 +154,4 @@ const Test = () => {
     );
 }
 
-export default Test;
+export default TestFormHandling;
