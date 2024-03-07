@@ -12,11 +12,13 @@ import TestList from './components_section_6/TestList';
 import TestAccordion from './components_section_6/TestAccordion';
 import TestAutoComplete from './components_section_6/TestAutoComplete';
 import TestDrawer from './components_section_6/TestDrawer';
+import TestAlert from './components_section_6/TestAlert';
+import TestSnackBar from './components_section_6/TestSnackBar';
 
 function App() {
   return (
     <div>
-      <ActionAreaCard/>
+      <TestSnackBar/>
     </div>
   );
 }
