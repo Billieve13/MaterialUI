@@ -5,11 +5,15 @@ import {
     TextField, 
     Checkbox, 
     FormGroup, 
+    FormLabel,
     FormControl, 
     Select, 
     MenuItem, 
     InputLabel, 
-    FormControlLabel } from "@mui/material";
+    FormControlLabel, 
+    Radio,
+    RadioGroup,
+    } from "@mui/material";
 
 const Test = () => {
     const [inputs, setInputs] = useState({
@@ -17,7 +21,8 @@ const Test = () => {
         email: "",
         password: "",
         subscribe: false,
-        age: 0,
+        age: undefined,
+        gender: '',
     });
 
     const handleChange = (e) => {
@@ -110,8 +115,6 @@ const Test = () => {
                     subscribe: !inputs.subscribe,
                 }))}/>} 
                 label="Subscribe to the Newsletter" />
-            {/* <FormControlLabel required control={<Checkbox />} label="Required" />
-            <FormControlLabel disabled control={<Checkbox />} label="Disabled" /> */}
         </FormGroup>
         </div>
         <div>
@@ -133,6 +136,19 @@ const Test = () => {
                 <MenuItem value={30}>Thirty</MenuItem>
             </Select>
         </FormControl>
+        </div>
+        <div>
+        <FormControl>
+            <FormLabel>Gender</FormLabel>
+            <RadioGroup
+                onChange={handleChange}
+                name="gender"
+            >
+                <FormControlLabel value="female" control={<Radio />} label="Female" />
+                <FormControlLabel value="male" control={<Radio />} label="Male" />
+                <FormControlLabel value="other" control={<Radio />} label="Other" />
+            </RadioGroup>
+        </FormControl>    
         </div>
         </>
     );
