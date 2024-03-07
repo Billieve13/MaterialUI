@@ -1,8 +1,8 @@
 import React from 'react';
-import TestFormHandling from './TestFormHandling';
-import TestHeader from './TestHeader';
-import TestTabs from './TestTabs';
-import TestMenu from './TestMenu';
+import TestFormHandling from './components/TestFormHandling';
+import TestHeader from './components/TestHeader';
+import TestTabs from './components/TestTabs';
+import TestMenu from './components/TestMenu';
 
 function App() {
   return (
