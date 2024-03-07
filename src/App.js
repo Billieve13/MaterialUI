@@ -16,7 +16,7 @@ import TestDrawer from './components_section_6/TestDrawer';
 function App() {
   return (
     <div>
-      <TestDrawer/>
+      <ActionAreaCard/>
     </div>
   );
 }
