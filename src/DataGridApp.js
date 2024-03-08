@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, TextField, Typography, Box } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
 
-    const columns: [] = [//why did it give TypeScript?
+    const columns = [//why did it give TypeScript?
         { field: 'id', headerName: 'ID', width: 90 },
         {
         field: 'firstName',
