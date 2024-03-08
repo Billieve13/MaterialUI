@@ -14,11 +14,14 @@ import TestAutoComplete from './components_section_6/TestAutoComplete';
 import TestDrawer from './components_section_6/TestDrawer';
 import TestAlert from './components_section_6/TestAlert';
 import TestSnackBar from './components_section_6/TestSnackBar';
+import TestProgressBar from './components_section_6/TestProgressBar';
+import TestRating from './components_section_6/TestRating';
+import TestImageList from './components_section_6/TestImageList';
 
 function App() {
   return (
     <div>
-      <TestSnackBar/>
+      <TestImageList/>
     </div>
   );
 }
