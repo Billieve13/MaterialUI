@@ -20,7 +20,7 @@ import { useForm } from 'react-hook-form';
 // import TestRating from './components_section_6/TestRating';
 // import TestImageList from './components_section_6/TestImageList';
 
-function App() {
+function ReactFormApp() {
   const {
     register,
     handleSubmit,
@@ -62,4 +62,4 @@ function App() {
   );
 }
 
-export default App;
+export default ReactFormApp;
