@@ -6,12 +6,14 @@ import DataGridApp from './DataGridApp';
 import DataGridProject from './datagridproject/DataGridProject';
 import Data from './datagridproject/Data';
 import { BrowserRouter as Router, Route, BrowserRouter } from 'react-router-dom';
+import DarkLightMode from './components_section_12/DarkLightMode';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      <DataGridProject />
+      <DarkLightMode />
+      {/* need to change based on whatever is being worked on */}
     </React.StrictMode>
   </BrowserRouter>
 );
